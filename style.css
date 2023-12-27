@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 40vh;
+    width: 100vw;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    display: grid;
+    place-content: center;
+}
+
+.todo-container{
+    width: 40vw;
+    min-height: 30vh;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    margin-top: 5rem;
+}
+
+h1{
+    color: #3b007a;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+#userinput{
+    width: 100%;
+    height: 8vh;
+    padding: 1rem;
+    font-size: 0.9rem;
+    border-radius: 2rem;
+    border: 2px solid #3b007a;
+    outline: none;
+    color: #3b007a;
+    font-weight: 600;
+    caret-color: #3b007a;
+}
+
+#userinput::placeholder{
+    color: #820dff;
+    font-weight: 500;
+}
+
+.box{
+    position: relative;
+}
+
+#addbtn{
+    width: 25%;
+    height: 8vh;
+    border-radius: 2rem;
+    background-color: #3b007a;
+    border: none;
+    color: #b378f1;
+    font-weight: 500;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.list{
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.ans{
+    padding: 0.5rem;
+    width: 100%;
+    position: relative;
+
+}
+
+span{
+    color: grey;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+input[type = "checkbox"]{
+    accent-color: #3b007a;
+    border: none;
+    outline: none;
+}
+
+input[type="checkbox"]:checked+.list{
+    text-decoration: line-through;
+}
+
+#del{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width:490px){
+    h1{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:400px){
+    h1{
+        font-size: medium;
+    }
+    #addbtn{
+        width: 10vw;
+        height: 100%;
+        font-size: xx-small;
+    }
+
+    #userinput{
+        padding-left: 0.4rem;
+        padding-right: 3rem;
+    }
+
+    #userinput::placeholder{
+        font-size: xx-small;
+    }
+
+
+}
+
+
+
